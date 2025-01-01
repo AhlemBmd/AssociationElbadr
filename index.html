@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Association El Badr</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: url('logo.png') no-repeat center center fixed;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background-color: transparent;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .container h1 {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .social-links a {
+            text-decoration: none;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: #333;
+            transition: transform 0.3s ease, color 0.3s ease;
+        }
+        .social-links a:hover {
+            transform: scale(1.1); /* Augmente légèrement la taille */
+        }
+        .social-links a:hover i {
+            color: #fff; /* Change la couleur de l'icône */
+        }
+        .social-links a:nth-child(1):hover i {
+            background-color: #ffff; /* Facebook : bleu */
+            padding: 10px;
+            border-radius: 50%;
+        }
+        .social-links a:nth-child(2):hover i {
+            background-color: #ffff; /* Instagram : rose */
+           
+            padding: 10px;
+            border-radius: 50%;
+        }
+        .social-links i {
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        .social-links span {
+            margin-top: 10px;
+            font-size: 14px;
+        }
+    </style>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container">
+        <h1>Suivez-nous </h1>
+        <div class="social-links">
+            <a href="https://www.facebook.com/AssociationElBadr/?locale=fr_FR" target="_blank">
+                <i class="fab fa-facebook fa-3x" style="color: #4267B2;"></i>
+                <span>Facebook</span>
+            </a>
+            <a href="https://www.instagram.com/association.el.badr/?utm_source=ig_web_button_share_sheet" target="_blank">
+                <i class="fab fa-instagram fa-3x" style="color: #fa4540;"></i>
+                <span>Instagram</span>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
