@@ -41,18 +41,33 @@
     width:100%;
     max-width: 460px;
   }
-    .header{
+
+  .header{
     text-align:center;
     padding: 8px 8px 28px;
   }
 
+  /* Logo now sits inside a soft round backdrop so it reads as a clean
+     mark instead of a stretched rectangle floating on the cream page */
+  .logo-badge{
+    width: 132px;
+    height: 132px;
+    margin: 0 auto 16px;
+    border-radius: 50%;
+    background: radial-gradient(circle at 50% 40%, #ffffff 0%, var(--green-soft) 78%, var(--clay-soft) 100%);
+    box-shadow:
+      0 1px 2px rgba(35,40,31,0.06),
+      0 10px 22px rgba(28,107,52,0.14);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+
   .logo{
-    width:200px;
-    height:200px;
-    object-fit:contain;
+    width: 88px;
+    height: auto;
     display:block;
-    margin: 0 auto 14px;
-    filter: drop-shadow(0 6px 14px rgba(28,107,52,0.18));
+    object-fit: contain;
   }
 
   .header h1{
@@ -69,7 +84,8 @@
     margin:0;
     line-height:1.5;
   }
-.section{
+
+  .section{
     margin-top: 26px;
   }
 
@@ -79,6 +95,7 @@
     color: var(--green-deep);
     margin: 0 0 10px 4px;
   }
+
   .stack{
     display:flex;
     flex-direction:column;
@@ -152,8 +169,9 @@
     color: #c7cbc0;
     font-size: 14px;
   }
+
   /* footer */
-    .footer{
+  .footer{
     text-align:center;
     margin-top: 34px;
     padding-top: 18px;
@@ -176,7 +194,9 @@
 <div class="page">
 
   <div class="header">
-  <img class="logo" src="logo.png" alt="Logo Association El Badr">
+    <div class="logo-badge">
+      <img class="logo" src="logo.png" alt="Logo Association El Badr">
+    </div>
     <h1>Association El Badr</h1>
     <p>Suivez-nous, engagez-vous et contactez-nous</p>
   </div>
